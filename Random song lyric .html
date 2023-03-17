@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Random Song Lyric Quote</title>
+  </head>
+  <body>
+    <h1>Random Song Lyric Quote:</h1>
+    <p id="quote"></p>
+    
+    <script>
+      // Define an array of song lyric quotes
+      const songLyrics = [
+        "I'm just a soul whose intentions are good, so please don't let me be misunderstood.",
+        "You may say I'm a dreamer, but I'm not the only one.",
+        "Don't stop believin', hold on to that feelin'.",
+        "Cause all of me loves all of you, love your curves and all your edges, all your perfect imperfections.",
+        "I wanna dance with somebody, I wanna feel the heat with somebody.",
+        "What a wonderful world.",
+        "I will always love you.",
+        "Somebody once told me the world is gonna roll me, I ain't the sharpest tool in the shed."
+      ];
+      
+      // Generate a random quote from the array
+      const randomIndex = Math.floor(Math.random() * songLyrics.length);
+      const randomQuote = songLyrics[randomIndex];
+      
+      // Display the quote on the HTML page
+      document.getElementById("quote").innerHTML = randomQuote;
+    </script>
+  </body>
+</html>
